@@ -19,6 +19,8 @@
   "author": "Vishwas",
   "license": "MIT",
   "dependencies": {
+    "@emotion/babel-plugin": "^11.9.2",
+    "@emotion/react": "^11.9.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },

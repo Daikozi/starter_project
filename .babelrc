@@ -4,12 +4,14 @@
     [
       "@babel/preset-react",
       {
-        "runtime": "automatic"
+        "runtime": "automatic",
+        "importSource": "@emotion/react"
       }
     ],
     "@babel/preset-typescript"
   ],
   "plugins": [
+    "@emotion/babel-plugin",
     [
       "@babel/plugin-transform-runtime",
       {
