@@ -1,2 +1,2 @@
-export * from './Typography'
-export * from './Typography.propTypes'
+export { Typography } from './Typography'
+export type { TypographyProps } from './Typography.propTypes'
