@@ -1,0 +1,33 @@
+import { Autocomplete } from './Autocomplete'
+// import { AutocompleteProps } from './Autocomplete.propTypes'
+import {
+  ArgsTable,
+  Canvas,
+  Meta,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks'
+
+<Meta title="Components/Autocomplete" component={Autocomplete} />
+
+# Typography
+
+Use typography to present your design and content as clearly and efficiently as possible.
+
+# General
+
+The Roboto font will not be automatically loaded by MUI. You are responsible for loading any fonts used in your application. Roboto Font has a few easy ways to get started. For more advanced configuration, check out the theme customization section.
+
+# API
+
+<ArgsTable of={Typography} />
+
+# Component
+
+The Typography component makes it easy to apply a default set of font weights and sizes in your application.
+
+<Canvas>
+  <Story name="Default">
+    <Autocomplete />
+  </Story>
+</Canvas>

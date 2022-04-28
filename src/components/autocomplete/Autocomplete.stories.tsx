@@ -1,8 +1,17 @@
-import { Autocomplete } from './components/autocomplete/Autocomplete'
-import './styles.css'
+import { Meta, Story } from '@storybook/react'
+import { AutocompleteProps } from './Autcomplete.propTypes'
+import { Autocomplete } from './Autocomplete'
 
-export const App = () => {
-  const options = [
+export default {
+  title: 'Components/Autocomplete',
+  component: Autocomplete,
+} as Meta
+
+const Template: Story<AutocompleteProps> = (args) => <Autocomplete {...args} />
+
+export const Default = Template.bind({})
+Default.args = {
+  options: [
     'Alabama',
     'Alaska',
     'American Samoa',
@@ -62,10 +71,6 @@ export const App = () => {
     'West Virginia',
     'Wisconsin',
     'Wyoming',
-  ]
-  return (
-    <div className="app">
-      <Autocomplete options={options} label="label" />
-    </div>
-  )
+  ],
+  label: 'State',
 }
